@@ -26,8 +26,18 @@
     </div><!-- /header -->
 
     <div data-role="content">
-        <a href="getride.html" class="ui-btn">Get A Ride</a>
-        <a href="giveride.html" class="ui-btn">Give A Ride</a>
+        <form>
+            <label for="somedate">Date to Give Ride:</label>
+            <input type="date" data-role="datebox" name="somedate"
+            data-options='{"mode": "datebox"}'/>
+            <label for="timestart">Availability Start:</label>
+            <input type="time" data-role="datebox" name="timestart"
+            data-options='{"mode": "timebox"}'/> 
+            <label for="timeend">Availability End:</label>
+            <input type="time" id="timeend" data-role="datebox" name="timeend"
+            data-options='{"mode": "timebox"}'>
+            <input type="submit" value="Give A Ride">
+        </form>
     </div><!-- /content -->
 
   </div><!-- /page -->
