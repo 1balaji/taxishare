@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>jQuery Mobile test page</title>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css" />
+  <link rel="stylesheet" href="jquery.mobile.datepicker.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
+  <script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+  <script src="jquery.mobile.datepicker.js"></script>
+
+</head>
+
+
+<body>
+
+  <div data-role="page">
+
+    <div data-role="header">
+      <h1>Taxi Share</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <form>
+            <label for="date">Date of Travel:</label>
+            <input type="date" name="date" id="date" value="">
+            <label for="address">Preferred Pick-Up Address:</label>
+            <input type="text" name="address" id="address" value="">
+            <fieldset data-role="controlgroup">
+                <legend>Airport:</legend>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="ohare" checked="checked">
+                    <label for="radio-choice-1">O'Hare</label>
+                    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="midway">
+                    <label for="radio-choice-2">Midway</label>
+            </fieldset>
+            <label for="flight">Flight Number:</label>
+            <input type="text" name="flight" id="flight" value="">
+
+        </form>
+    </div><!-- /content -->
+
+  </div><!-- /page -->
+
+</body>
+</html>
