@@ -40,20 +40,29 @@
             <label for="date">Date of Travel:</label>
             <input type="date" name="date" id="date" value="">
             <label for="address">Preferred Pick-Up Address:</label>
-            <input type="text" name="address" id="address" value="">
+            <input type="text" name="address" id="address" value=""> 
+            <fieldset data-role="controlgroup">
+                <legend>Type of Ride:</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="student">
+                    <label for="radio-choice-1">Student Driver</label>
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="taxi" checked="checked">
+                    <label for="radio-choice-2">Taxi</label>
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="either">
+                    <label for="radio-choice-3">Either</label>
+            </fieldset>
             <fieldset data-role="controlgroup">
                 <legend>Airport:</legend>
-                    <input type="radio" name="radio-choice-1" id="radio-choice-1" value="ohare" checked="checked">
-                    <label for="radio-choice-1">O'Hare</label>
-                    <input type="radio" name="radio-choice-1" id="radio-choice-2" value="midway">
-                    <label for="radio-choice-2">Midway</label>
+                    <input type="radio" name="radio-choic" id="ohare" value="ohare" checked="checked">
+                    <label for="ohare">O'Hare</label>
+                    <input type="radio" name="radio-choic" id="midway" value="midway">
+                    <label for="midway">Midway</label>
             </fieldset>
             <label for="airline">Airline:</label>
             <input type="text" name="airline" id="airline" value="">
             <label for="flight">Flight Number:</label>
             <input type="text" name="flight" id="flight" value="">
-            <label for="arrival">Arrival Time::</label>
-            <input type="text" name="arrival" id="arrival" value="">
+            <label for="arrival">Arrival Time:</label>
+            <input type="time" name="arrival" id="arrival" value="">
             <a href="otherriders.html" data-role="button">Submit</a>
         </form>
     </div><!-- /content -->
