@@ -44,6 +44,8 @@
         <th>Pickup Time</th>
         <th>Type</th>
         <th>Ride Found?</th>
+        <th>Rider Requests</th>
+        <th>Delete Ride</th>
       </tr>
       <tr>
         <td>5/14/14</td>
@@ -53,14 +55,37 @@
         <td>Taxi</td>
         <td>Not Yet</td>
         <td>
+            <div>
+                <a href="#popupRiders" data-rel="popup" class="btn btn-primary table-link">View</a>
+            </div>
+        </td>
+        <td>
           <div>
             <a href="#" class="btn btn-danger table-link">Delete</a>
           </div>
         </td>
     </table>
-    <h1>Outstanding Requests</h1>
-    <table>
-    </table>
+        <div id="popupRiders" data-role="popup">
+    <h3>Rider Requests for this Ride</h3>
+    <table class="table table_striped">
+      <tr>
+        <th>Name</th>
+        <th>Accepted Ride Request?</th>
+    </tr>
+      <tr>
+        <td>Jon Ford</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Elliott Evans</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Sean Gransee</td>
+        <td>No</td>
+      </tr>
+  </table>
+  </div>
     </div>
 </div>
 <div id="two">
@@ -72,14 +97,19 @@
         <th>Dest.</th>
         <th>Pickup Location</th>
         <th>Pickup Time</th>
-        <th>Riders Found?</th>
+        <th>Riders Found</th>
+        <th>Delete Ride</th>
       </tr>
       <tr>
         <td>5/14/14</td>
         <td>O'Hare Airport</td>
-        <td>North Campus</td>
+        <td>1820 Chicago Ave</td>
         <td>3:32 PM</td>
-        <td>Not Yet</td>
+        <td>
+            <div>
+                <a href="#popupDriver" data-rel="popup" class="btn btn-primary table-link">View</a>
+            </div>
+        </td>
         <td>
           <div>
             <a href="#" class="btn btn-danger table-link">Delete</a>
@@ -87,6 +117,40 @@
         </td>
       </tr>
   </table>
+    <div id="popupDriver" data-role="popup">
+    <h3>Riders in your Ride</h3>
+    <table class="table table_striped">
+      <tr>
+        <th>Name</th>
+        <th>View Profile</th>
+    </tr>
+      <tr>
+        <td>Jon Ford</td>
+        <td>
+            <div>
+                <a href="#" class="btn btn-primary table-link">View</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Elliott Evans</td>
+        <td>
+            <div>
+                <a href="#" class="btn btn-primary table-link">View</a>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Paul Blart</td>
+        <td>
+            <div>
+                <a href="#" class="btn btn-primary table-link">View</a>
+            </div>
+        </td>
+      </tr>
+  </table>
+  </div>
+
   </div>
 </div>
     
