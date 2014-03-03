@@ -9,6 +9,7 @@
 
   <link rel="stylesheet"  href="http://code.jquery.com/mobile/git/jquery.mobile-git.css" />
   <link rel="stylesheet" href="jquery.mobile.datepicker.css" />
+  <link rel="stylesheet" href="bootstrap.min.css">
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
   <script src="http://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
@@ -22,24 +23,40 @@
   <div data-role="page">
 
     <div data-role="header">
-      <h1>Taxi Share</h1>
+        <h1>Taxi Share</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="getride.html">Get Ride</a></li>
+                <li><a href="giveride.html" class="ui-btn-active">Give Ride</a></li>
+                <li><a href="viewrides.html">View Rides</a></li>
+            </ul>
+        </div>
     </div><!-- /header -->
 
     <div data-role="content">
+        <h1 style="text-align:center;">Give A Ride</h1>
         <form>
             <label for="somedate">Date to Give Ride:</label>
-            <input type="date" data-role="datebox" name="somedate"
+            <input type="date" id="date" data-role="datebox" name="somedate"
             data-options='{"mode": "datebox"}'/>
             <label for="timestart">Availability Start:</label>
-            <input type="time" data-role="datebox" name="timestart"
+            <input type="time" id="timestart" data-role="datebox" name="timestart"
             data-options='{"mode": "timebox"}'/> 
             <label for="timeend">Availability End:</label>
             <input type="time" id="timeend" data-role="datebox" name="timeend"
             data-options='{"mode": "timebox"}'>
-            <input type="submit" value="Give A Ride">
+            <a href="" data-role="button" id="add">Add Availability</a>
         </form>
+        <h3>List of Availabilities</h3>
+        <div id="rides">empty</div>
+        <a href="#popupReturn" data-rel="popup" data-position-to="window" data-role="button">Find Passengers</a>
+        <div data-role="popup" id="popupReturn" data-theme="a" class="ui-corner-all">
+            <h2>Thanks, your availabilities have been added successfully.</h2>
+            <h4>You will be notified if anyone requests a ride with you. You can view requests from the view my rides page.</h4>
+            <a href="viewrides.html" data-role="button">View Rides</a>
+        </div>
     </div><!-- /content -->
-
+    <script src="giveride.js"></script>
   </div><!-- /page -->
 
 </body>

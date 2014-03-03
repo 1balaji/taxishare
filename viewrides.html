@@ -16,8 +16,24 @@
 </head>
 <body>
     <div data-role="header">
-      <h1>Taxi Share</h1>
-    </div>  
+        <h1>Taxi Share</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="getride.html">Get Ride</a></li>
+                <li><a href="giveride.html">Give Ride</a></li>
+                <li><a href="viewrides.html" class="ui-btn-active">View Rides</a></li>
+            </ul>
+        </div>
+    </div><!-- /header -->
+    <h1 style="text-align:center;">View My Rides</h1>
+  <div data-role="tabs" id="tabs">
+      <div data-role="navbar">
+          <ul>
+              <li><a href="#one" data-ajax"false" class="ui-btn-active">Riding</a></li>
+              <li><a href="#two" data-ajax"false">Driving</a></li>
+          </ul>
+      </div>
+      <div id="one">
   <div class="container">
     <h1>Your rides</h1>
     <table id="rides_table" class="table table_striped">
@@ -54,7 +70,33 @@
         </td>
       </tr> -->
     </table>
+</div>
+</div>
+<div id="two">
+    <div class="container">
+    <table class="table table_striped">
+      <tr>
+        <th>Date</th>
+        <th>Dest.</th>
+        <th>Pickup Location</th>
+        <th>Pickup Time</th>
+        <th>Riders Found?</th>
+      </tr>
+      <tr>
+        <td>5/14/14</td>
+        <td>O'Hare Airport</td>
+        <td>North Campus</td>
+        <td>3:32 PM</td>
+        <td>Not Yet</td>
+        <td>
+          <div>
+            <a href="#" class="btn btn-danger table-link">Delete</a>
+          </div>
+        </td>
+      </tr>
+  </table>
   </div>
+</div>
     
 </body>
 </html>
